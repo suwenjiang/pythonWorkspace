@@ -17,4 +17,7 @@ arcpy scripts to mange arcgis server site with ui developed by tkInter
 
 to admin ags server site in console
 
-Compare with the previous ways, this one are recommended.
+**Compare with the previous ways, this one are recommended.**
+
++ BatchPublishService 
+ Publish Dynamic Map Server in Batch. please vist (http://swj.me/2015/08/26/batchPublishtools/)for more infomation. 
