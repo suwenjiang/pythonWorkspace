@@ -211,8 +211,20 @@ class ADMINself(object):
             for single in fList["services"]:
                 services.append(folder + "//" + single['serviceName'] + '.' + single['type'])
 
-        print services
+        #print services
         return services
+
+    def getStartedOrStopedServiceList(self,startstop):
+
+        allServices=self.getServiceList()
+        start_or_stoped_list=[]
+        for service in allServices:
+            response=self.sendAGSReq(self.URL+'/services/{}/status'.format(service)+self.basicQ,'')
+
+            if response['realTimeState']==str.upper(startstop):
+                start_or_stoped_list.append(service)
+        return start_or_stoped_list
+
 
 
     def getServerInfo(self):
@@ -366,4 +378,3 @@ class ADMINself(object):
 
 if __name__=="__main__":
     con=ADMINself("arcgis","Super123","localhost","6080")
-    print con.listRoles()
