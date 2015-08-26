@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>ArcGIS JavaScript API: SampleWorldCities</title>
+<style type="text/css"> @import"http://192.168.100.82/jsapi/3.14/dojo/dijit/themes/tundra/tundra.css";
+@import "http://192.168.100.82/jsapi/3.14/esri/css/esri.css";
+@import "/arcgis/rest/static/jsapi.css";
+</style> <script type="text/javascript"> var djConfig = { parseOnLoad: true };
+</script> <script type="text/javascript" src="http://192.168.100.82/jsapi/3.14/init.js"> </script> <script type="text/javascript"> dojo.require("dijit.layout.BorderContainer");
+dojo.require("dijit.layout.ContentPane");
+dojo.require("esri.map");
+var map;
+function init() {
+    map = new esri.Map("map");
+          var layer = new esri.layers.ArcGISTiledMapServiceLayer("http://192.168.220.64:6080/arcgis/rest/services/SampleWorldCities/MapServer");
+          map.addLayer(layer);
+    var resizeTimer;
+    dojo.connect(map, 'onLoad', function(theMap) {
+      dojo.connect(dijit.byId('map'), 'resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+          map.resize();
+          map.reposition();
+         }, 500);
+       });
+     });
+    }
+dojo.addOnLoad(init);
+</script> </head> <body class="tundra"> <div dojotype="dijit.layout.BorderContainer" design="headline" gutters="true" style="width: 100%; height: 100%; margin: 0;"> <div dojotype="dijit.layout.ContentPane" region="top" id="navtable"> <div style="float:left;" id="breadcrumbs">ArcGIS JavaScript API: SampleWorldCities</div> <div style="float:right;" id="help">
+Built using the <a href="http://help.arcgis.com/en/webapi/javascript/arcgis/">ArcGIS JavaScript API</a>
+</div> </div> <div id="map" dojotype="dijit.layout.ContentPane" region="center"> </div> </div> </body>
+</html>
