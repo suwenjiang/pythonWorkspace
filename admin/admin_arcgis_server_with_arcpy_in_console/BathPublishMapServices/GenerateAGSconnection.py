@@ -18,10 +18,8 @@ class CreateContectionFile(object):
         # con = 'http://localhost:6080/arcgis/admin'
         try:
             server_url = "http://{}:6080/arcgis/admin".format(self.__loginDict['server'])
-            connection_file_path = str(self.__filePath)
-            #
+            connection_file_path = str(self.__filePath)            #
             use_arcgis_desktop_staging_folder = False
-
             if os.path.exists(connection_file_path):
                 os.remove(connection_file_path)
             out_name = os.path.basename(connection_file_path)
@@ -41,8 +39,8 @@ class CreateContectionFile(object):
                                                            "SAVE_USERNAME"
                                                            )
 
-            print "____链接文件创建成功...."
-            print connection_file_path
+            print "++++++++INFO:链接文件创建成功++++++++"
+
 
             return connection_file_path
 

@@ -11,7 +11,7 @@ import time
 def GetMxFileList(filePath):
         #判断文件夹是否存在
     if not os.path.exists(filePath):
-        print "____文件夹不存在...."
+        print "++++++++ERROR:文件夹不存在+++++++"
         sys.exit(1)
     #获取文件夹中的所有mxd文件
     list=[]
@@ -25,7 +25,7 @@ def GetMxFileList(filePath):
                     list.append(mxdfile)
 
     if list==[]:
-      print "____在当前目录下不存在有效的mxd文件...."
+      print "++++++++INFO:在当前目录下不存在有效的mxd文件++++++++"
       time.sleep(5)
       sys.exit(1)
     return list
@@ -37,7 +37,7 @@ def GetInfo():
 
 
 
-    print "____开始创建server的链接文件...."
+    print "++++++++INFO:开始创建server的链接文件++++++++"
     """
     logDict={'server':'localhost',
         'userName':"arcgis",
@@ -52,19 +52,19 @@ def GetInfo():
                  'passWord':passWord}
 
     contionfile= os.path.split(sys.argv[0])[0]+'\\'+server+".ags"
-    print contionfile
+
     #调用创建链接文件的参数
     instace=CreateContectionFile()
     instace.filePath=contionfile
     instace.loginInfo=logDict
     instace.CreateContectionFile()
-    print contionfile
+
     if(os.path.isfile(contionfile)==False):
-        print "____创建链接失败...."
+        print "++++++++ERROR:创建链接失败++++++++"
         time.sleep(5)
         sys.exit(1)
 
-    #输入mxd文件的文件夹
+    #输入mxd文件的文件夹e
     mxdDir=raw_input('请输入mxd所在文件夹:')
     fileList=GetMxFileList(mxdDir)
 

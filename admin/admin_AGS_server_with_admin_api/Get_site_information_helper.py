@@ -216,6 +216,10 @@ class ADMINself(object):
 
     def getStartedOrStopedServiceList(self,startstop):
 
+        """get the started or
+        stopped services list
+        """
+
         allServices=self.getServiceList()
         start_or_stoped_list=[]
         for service in allServices:
@@ -224,8 +228,23 @@ class ADMINself(object):
             if response['realTimeState']==str.upper(startstop):
                 start_or_stoped_list.append(service)
         return start_or_stoped_list
+    def getServiceListInCluster(self,clusterName):
+        '''
 
+        :param clusterName:
+        :return:
+        '''
 
+        service=[]
+        result=self.sendAGSReq(self.URL+"/clusters/{}/services".format(clusterName)+self.basicQ,'')
+        for single in result['services']:
+            if single['folderName']=="/":
+
+                service.append(single['serviceName'] + '.' + single['type'])
+            else:
+                service.append(single['folderName']+"//"+single['serviceName'] + '.' + single['type'])
+
+        return service
 
     def getServerInfo(self):
         ''' Function to get and display a detailed report about a server

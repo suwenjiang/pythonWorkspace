@@ -17,4 +17,4 @@ arcpy scripts to mange arcgis server site with ui developed by tkInter
 
 to admin ags server site in console
 
-Compare with the previous ways, this one are recommended.
+**Compare with the previous ways, this one are recommended.**

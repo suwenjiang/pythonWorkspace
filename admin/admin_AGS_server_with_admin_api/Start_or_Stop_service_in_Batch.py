@@ -3,15 +3,14 @@ __author__ = 'jiangmb'
 
 from Get_site_information_helper import *
 
-"""
-server="localhost"
-port='6080'
-username='arcgis'
-password='Super123'
+# server="localhost"
+# port='6080'
+# username='arcgis'
+# password='Super123'
+#
+# operation='started'
+# count=4
 
-operation='started'
-count=4
-"""
 
 server=raw_input("请输入GIS服务器的IP地址:")
 port=raw_input("请输入GIS连接的端口号，默认为6080。采用默认值请直接回车。")
@@ -38,6 +37,10 @@ else:
     if len(serviceList)<count:
         count=len(serviceList)
     adminself.stopStartServices('start',adminself.getServiceList()[0:count])
+
+
+
+
 
 
 
