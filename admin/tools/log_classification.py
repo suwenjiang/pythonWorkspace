@@ -144,4 +144,6 @@ if len(files)!=0:
     readAllMsg(dbpath,files)
 queryAndFilter(dbpath,whereclause,result_path)
 
+#delteDB
+os.remove(dbpath)
 
