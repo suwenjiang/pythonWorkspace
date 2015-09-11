@@ -1,3 +1,4 @@
+#coding:cp936
 __author__ = 'Administrator'
 
 # Required imports
@@ -6,6 +7,7 @@ import urllib2
 import json
 import sys
 import time
+
 
 class ADMINself(object):
 
@@ -46,16 +48,25 @@ class ADMINself(object):
 
 
 
-    def sendAGSReq(self,URL, query_dict):
-        #
+    def sendAGSReq(self,URL, query_dict):      #
         # Takes a URL and a dictionary and sends the request, returns the JSON
-    
-        query_string = urllib.urlencode(query_dict)
-    
-        jsonResponse = urllib.urlopen(URL, urllib.urlencode(query_dict))
-        jsonOuput = json.loads(jsonResponse.read())
-    
-        return jsonOuput
+        headers = {"Content-type": "application/x-www-form-urlencoded", "Accept": "text/plain"}
+        try:
+            if(len(query_dict)==0):
+                request=urllib2.Request(URL,headers=headers)
+            else:
+                query_string = urllib.urlencode(query_dict)
+                request=urllib2.Request(URL,data=query_string,headers=headers)
+            jsonResponse= urllib2.urlopen(request)
+        except urllib2.URLError,e:
+            if hasattr(e,'code'):
+                print e.code
+        except urllib2.HTTPError,e:
+            if hasattr(e,'reason'):
+               print e.reason
+        else:
+            jsonOuput = json.loads(jsonResponse.read())
+            return jsonOuput
     
     def checkMSG(self,jsonMSG):
         #
@@ -209,28 +220,47 @@ class ADMINself(object):
         for folder in folderList:
             fList = self.sendAGSReq(self.URL + "/services/{}".format(folder) + self.basicQ, '')
             for single in fList["services"]:
-                services.append(folder + "//" + single['serviceName'] + '.' + single['type'])
+                services.append(folder + "/" + single['serviceName'] + '.' + single['type'])
 
         #print services
         return services
 
-    def getStartedOrStopedServiceList(self,startstop):
-
+    def getStartedOrStopedServiceList(self,startstop="started"):
         """get the started or
         stopped services list
         """
-
+        #get all the user services in site
+        URL="http://{}:{}/arcgis/rest/services".format(self.server,self.port)
         allServices=self.getServiceList()
-        start_or_stoped_list=[]
-        for service in allServices:
-            response=self.sendAGSReq(self.URL+'/services/{}/status'.format(service)+self.basicQ,'')
 
-            if response['realTimeState']==str.upper(startstop):
-                start_or_stoped_list.append(service)
-        return start_or_stoped_list
+        services=[]
+        # get the started services in site
+        serviceList=self.sendAGSReq(URL+self.basicQ,'')
+        for single in serviceList["services"]:
+
+            services.append(single['name'] + '.' + single['type'])
+
+        # Build up list of folders and remove the System and Utilities folder (we dont want anyone playing with them)
+        folderList = serviceList["folders"]
+        folderList.remove("Utilities")
+        folderList.remove("System")
+        for folder in folderList:
+            fList = self.sendAGSReq(URL + "/"+(folder) + self.basicQ, '')
+            for single in fList["services"]:
+                services.append(single['name']+ '.' + single['type'])
+
+        if(str.lower(startstop)=='started'):
+
+
+            return services
+        else:
+            stoppedservice=[i for i in allServices if i not in services]
+
+            return stoppedservice
+
     def getServiceListInCluster(self,clusterName):
-        '''
 
+        '''
         :param clusterName:
         :return:
         '''
@@ -255,7 +285,6 @@ class ADMINself(object):
 
         # Get Cluster and Machine info
         jCluster = self.sendAGSReq(self.URL + "/clusters" + self.basicQ, '')
-
         if len(jCluster["clusters"]) == 0:
             report += "No clusters found\n\n"
         else:
@@ -394,6 +423,15 @@ class ADMINself(object):
             print "Exported site to {0}".format(exportJSON['location'])
         else:
             print exportJSON
+
+    def getServiceConfig(self,serviceName):
+        result=self.sendAGSReq(self.URL+"/services/{}".format(serviceName)+self.basicQ,'')
+        return result
+    def updateServiceConfig(self,serviceName,config):
+
+        url=self.URL+"/services/{}/edit".format(serviceName)+self.basicQ
+        result =self.sendAGSReq(url,config)
+        return result
 
 if __name__=="__main__":
     con=ADMINself("arcgis","Super123","localhost","6080")
