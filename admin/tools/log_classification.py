@@ -53,34 +53,59 @@ def readAllMsg(sqllite_file,logFileList):
             file=open(single)
             #get all lines in file
             Lines=file.readlines()
-            for i in Lines:
-                time=re.findall(r'"([^"]*)"',re.findall('time="[^"]*"',i)[0])[0]
-                type=re.findall(r'"([^"]*)"',re.findall('type="[^"]*"',i)[0])[0]
-                code=re.findall(r'"([^"]*)"',re.findall('code="[^"]*"',i)[0])[0]
-                process=re.findall(r'"([^"]*)"',re.findall('process="[^"]*"',i)[0])[0]
-                thread=re.findall(r'"([^"]*)"',re.findall('thread="[^"]*"',i)[0])[0]
-                methodName=re.findall(r'"([^"]*)"',re.findall('methodName="[^"]*"',i)[0])[0]
-                source=re.findall(r'"([^"]*)"',re.findall('source="[^"]*"',i)[0])[0]
-                machine=re.findall(r'"([^"]*)"',re.findall('machine="[^"]*"',i)[0])[0]
-                user=re.findall(r'"([^"]*)"',re.findall('user="[^"]*"',i)[0])[0]
-                msg1=re.findall('>[^/].*<',i)
-                if len(msg1)!=0:
-                    msg2=re.findall(r'>([^"]*)<',msg1[0])
-                if len(msg2)!=0:
-                    msg=msg2[0]
-                else:
-                    msg="get log message failed"
-                #
-                count=count+1
-                #print time,type,code,source,process,thread,methodName,machine,user,msg
-                conn.execute("insert into LOG values (?,?,?,?,?,?,?,?,?,?,?,?);", (count,time,msg.decode('utf-8'),type,code,source,process,thread,methodName,machine,i.decode("utf8"),user))
 
-        conn.commit()
-        conn.close()
+            for i in Lines:
+                splitCode(i)
+        #         time=re.findall(r'"([^"]*)"',re.findall('time="[^"]*"',i)[0])[0]
+        #         type=re.findall(r'"([^"]*)"',re.findall('type="[^"]*"',i)[0])[0]
+        #         code=re.findall(r'"([^"]*)"',re.findall('code="[^"]*"',i)[0])[0]
+        #         process=re.findall(r'"([^"]*)"',re.findall('process="[^"]*"',i)[0])[0]
+        #         thread=re.findall(r'"([^"]*)"',re.findall('thread="[^"]*"',i)[0])[0]
+        #         methodName=re.findall(r'"([^"]*)"',re.findall('methodName="[^"]*"',i)[0])[0]
+        #         source=re.findall(r'"([^"]*)"',re.findall('source="[^"]*"',i)[0])[0]
+        #         machine=re.findall(r'"([^"]*)"',re.findall('machine="[^"]*"',i)[0])[0]
+        #         user=re.findall(r'"([^"]*)"',re.findall('user="[^"]*"',i)[0])[0]
+        #         msg1=re.findall('>[^/].*<',i)
+        #
+        #         if len(msg1)!=0:
+        #             msg2=re.findall(r'>([^"]*)<',msg1[0])
+        #         if len(msg2)!=0:
+        #             msg=msg2[0]
+        #         else:
+        #             msg="get log message failed"
+        #         #
+        #         count=count+1
+        #         #print time,type,code,source,process,thread,methodName,machine,user,msg
+        #         conn.execute("insert into LOG values (?,?,?,?,?,?,?,?,?,?,?,?);", (count,time,msg.decode('utf-8'),type,code,source,process,thread,methodName,machine,i.decode("utf8"),user))
+        #
+        # conn.commit()
+        # conn.close()
      #
 
     except Exception,ex:
         print ex
+
+
+def splitCode(line):
+
+    if '>' in line:
+        text=line.split('>')
+
+        if '<' in text[1]:
+
+            msg=text[1].split('<')[0]
+
+        else:
+            msg=text[1]
+        listt=text[0].split(' ')[1:]
+
+        print listt
+        print listt.append('msg='+msg)
+
+    else:
+        print line
+
+
 
 def queryAndFilter(sqllite_file,whereClause,result_Path):
     conn=sqlite3.connect(sqllite_file)
@@ -95,55 +120,56 @@ def queryAndFilter(sqllite_file,whereClause,result_Path):
 
 
 
-dbpath=''
-whereclause=''
-typeclause={'w':'WARNING','i':'INFO','f':'FINE','v':'VERBOSE','s':'SERVERE','d':'DEBUG'}
-parser = argparse.ArgumentParser()
-parser.add_argument("p",help="input directory or path of log file ",action="store")
-parser.add_argument("-c",'--complete',metavar='',help="completely output format")
+# dbpath=''
+# whereclause=''
+# typeclause={'w':'WARNING','i':'INFO','f':'FINE','v':'VERBOSE','s':'SERVERE','d':'DEBUG'}
+# parser = argparse.ArgumentParser()
+# parser.add_argument("p",help="input directory or path of log file ",action="store")
+# parser.add_argument("-c",'--complete',metavar='',help="completely output format")
+#
+# parser.add_argument("-l","--log",help="use msgType[warning,info,fine,verbose,severe,debug] to filter the log",\
+#                     choices=["w","i","f","v","s","d"],action="store")
+# parser.add_argument("-m","--machine",metavar='',help="machine name",action="store")
+# parser.add_argument("-t","--time",metavar='',help="time to filter log",action="store")
+# args=parser.parse_args()
+#
+# files=[]
+# result_path=''
+# if  os.path.isfile(args.p):
+#     files.append(args.p)
+#     dbpath=os.path.split(args.p)[0]+"\\log.sqlite"
+#     result_path=os.path.split(args.p)[0]
+#
+# elif os.path.isdir(args.p):
+#     files=getLogfile(args.p)
+#     if len(files)==0:
+#         print "The Current Dirtory don't container any log files"
+#         sys.exit()
+#     else:
+#         dbpath=args.p+"\\log.sqlite"
+#         result_path=args.p
+# else:
+#     print "please input a valid directory or .log file"
+#     sys.exit()
+#
+# if args.log:
+#     if not args.log in ['w','i','f','v','s','d']:
+#         print "please choose a value from ['w','i','f','v','s','d']"
+#         sys .exit()
+#     else:
+#         whereclause=typeclause[args.log]
+# # if args.machine:
+# #     whereclause=args.log
 
-parser.add_argument("-l","--log",help="use msgType[warning,info,fine,verbose,severe,debug] to filter the log",\
-                    choices=["w","i","f","v","s","d"],action="store")
-parser.add_argument("-m","--machine",metavar='',help="machine name",action="store")
-parser.add_argument("-t","--time",metavar='',help="time to filter log",action="store")
-args=parser.parse_args()
-
-files=[]
-result_path=''
-if  os.path.isfile(args.p):
-    files.append(args.p)
-    dbpath=os.path.split(args.p)[0]+"\\log.sqlite"
-    result_path=os.path.split(args.p)[0]
-
-elif os.path.isdir(args.p):
-    files=getLogfile(args.p)
-    if len(files)==0:
-        print "The Current Dirtory don't container any log files"
-        sys.exit()
-    else:
-        dbpath=args.p+"\\log.sqlite"
-        result_path=args.p
-else:
-    print "please input a valid directory or .log file"
-    sys.exit()
-
-if args.log:
-    if not args.log in ['w','i','f','v','s','d']:
-        print "please choose a value from ['w','i','f','v','s','d']"
-        sys .exit()
-    else:
-        whereclause=typeclause[args.log]
-# if args.machine:
-#     whereclause=args.log
 
 
-
-# createDB
-createDB(dbpath)
-if len(files)!=0:
-    readAllMsg(dbpath,files)
-queryAndFilter(dbpath,whereclause,result_path)
-
-#delteDB
-os.remove(dbpath)
-
+# # createDB
+# createDB(dbpath)
+# if len(files)!=0:
+#     readAllMsg(dbpath,files)
+# queryAndFilter(dbpath,whereclause,result_path)
+#
+# #delteDB
+# os.remove(dbpath)
+files=getLogfile(r"C:\Users\jiangmb\Desktop\server")
+readAllMsg('',files)

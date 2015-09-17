@@ -152,16 +152,19 @@ class publishServices:
 
     def checkfileValidation(self,mxdLists):
         print "++++++++INFO:开始检查文档的有效性++++++++"
-        file_to_be_published=[]
-        for file in mxdLists:
-            mxd=mapping.MapDocument(file)
-            brknlist=mapping.ListBrokenDataSources(mxd)
-            if not len(brknlist)==0:
-                print "++++++++ERROR:地图文档,"+os.path.split(file)[1]+"损坏，无法发布服务++++++++"
-            else:
-                file_to_be_published.append(file)
-        print "++++++++INFO:地图文档有效性检查完毕++++++"
-        return file_to_be_published
+        
+
+        # file_to_be_published=[]
+        # for file in mxdLists:
+        #     mxd=mapping.MapDocument(file)
+        #     brknlist=mapping.ListBrokenDataSources(mxd)
+        #     if not len(brknlist)==0:
+        #         print "++++++++ERROR:地图文档,"+os.path.split(file)[1]+"损坏，无法发布服务++++++++"
+        #     else:
+        #         file_to_be_published.append(file)
+        # print "++++++++INFO:地图文档有效性检查完毕++++++"
+
+        return mxdLists
 
 
     def publishServices(self,mxdLists,con,clusterName='default',copy_data_to_server=True,folder=None):
@@ -253,24 +256,22 @@ class publishServices:
 
 if __name__=='__main__':
 
-    logDict = {'server': 'localhost',
+    logDict = {'server': '192.168.220.64',
                'userName': "arcgis",
                'passWord': "Super123",
                'port':'6080'}
     dd = CreateContectionFile()
     dd.loginInfo = logDict
-    path = os.path.split(sys.argv[0])[0] + "\\" + 'tt.ags'
+    path = os.path.split(sys.argv[0])[0] + "\\" + 'confile.ags'
     print path
     dd.filePath = path
 
     dd.CreateContectionFile()
     clsPublishservice=publishServices()
     #get
-    file=r'D:\workspace\New folder\10'
+    file=r'd:\workspace\New folder\9'
     fileList=clsPublishservice.GetMxFileList(file)
-
-    contionfile=r"C:\Users\jiangmb\AppData\Roaming\ESRI\Desktop10.3\ArcCatalog\arcgis on 192.168.220.64_6080 (admin).ags"
-    clusterName='default'
+    clusterName='clusterA'
     servic_dir=''
 
     clsPublishservice.publishServices(fileList,path,clusterName,copy_data_to_server=False,folder=servic_dir)

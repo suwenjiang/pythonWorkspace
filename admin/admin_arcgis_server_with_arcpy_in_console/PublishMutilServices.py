@@ -1,16 +1,18 @@
 __author__ = 'suwen'
 import os
-import ArcPy_Project
+import arcpy
+
 def CreateContectionFile(wrkspc,userName,password,serverName):
 
       # con = 'http://localhost:6080/arcgis/admin'
     con="http://"+str(serverName)+":6080/arcgis/admin"
+    print con
     connection_file_path=str(wrkspc)+"/tmp.ags"
     #
     if os.path.exists(connection_file_path):
         os.remove(connection_file_path)
     agsname=os.path.basename(connection_file_path)
-    ArcPy_Project.mapping.CreateGISServerConnectionFile("ADMINISTER_GIS_SERVICES",
+    arcpy.mapping.CreateGISServerConnectionFile("ADMINISTER_GIS_SERVICES",
                                                     wrkspc,
                                                    agsname,
                                                     con,
@@ -36,18 +38,18 @@ def PublishService(connection_file_path,wrkspc,mapDoc):
     if(os.path.exists(sd)):
         os.remove(sd)
 
-    analysis = ArcPy_Project.mapping.CreateMapSDDraft(mapDoc, sddraft, serviceName, 'ARCGIS_SERVER',
+    analysis =arcpy.mapping.CreateMapSDDraft(mapDoc, sddraft, serviceName, 'ARCGIS_SERVER',
                                               connection_file_path, True, None,None,None)
 
-    ArcPy_Project.StageService_server(sddraft, sd)
-    ArcPy_Project.UploadServiceDefinition_server(sd, connection_file_path)
+    arcpy.StageService_server(sddraft, sd)
+    arcpy.UploadServiceDefinition_server(sd, connection_file_path)
 
-connection_file_path="C:\Users\suwen\AppData\Local\Esri\Desktop10.2\Staging"
-mxdfolder=r"d:\data\china"
+connection_file_path="d:\\"
+mxdfolder=r"D:\workspace\New folder"
 userName="arcgis"
-password="jmb"
-serverName="localhost"
-wrkspc=r"d:\data\china"
+password="Super123"
+serverName="192.168.220.64"
+wrkspc=r"D:\workspace\New folder"
 if len(connection_file_path)==0:
     #check the parameters
     if len(wrkspc)==0 or len(userName)==0 or len(password)==0 or len(serverName)==0:

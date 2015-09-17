@@ -68,7 +68,7 @@ class CreateContectionFile(object):
 
 
 if __name__ == '__main__':
-    logDict = {'server': 'localhost',
+    logDict = {'server': '192.168.220.64',
                'userName': "arcgis",
                'passWord': "Super123"}
     dd = CreateContectionFile()

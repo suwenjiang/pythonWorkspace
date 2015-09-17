@@ -13,20 +13,7 @@ path='d:\\'
 clustername='default'
 
 adminself=ADMINself(username,password,server,port)
-# serviceList=adminself.getServiceList()
-# print serviceList
-# #change the cluster Name
-# for single in serviceList:
-#     result=adminself.getServiceConfig(single)
-#
-#     result['maxInstancesPerNode']=3
-#     print result
-#     #result=json.dumps(result)
-#     print result
-#
-#     adminself.updateServiceConfig(single,result)
-#
-#     sys.exit()
+
 dataObj=adminself.getServiceConfig('SampleWorldCities.MapServer')
 dataObj["minInstancesPerNode"] =4
 dataObj["maxInstancesPerNode"] =5

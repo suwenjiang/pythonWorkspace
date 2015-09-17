@@ -5,28 +5,37 @@ import os
 from xml.dom.minidom import parse
 
 EXCLUDED_FILE_NAMES = ["DocumentInfo.xml", "layers/layers.xml","GISProject.xml"]
+path=r"C:\arcgisserver\directories\arcgissystem\arcgisinput\test4\testCopy.MapServer\extracted\v101\testCopy.msd"
 
-if(zipfile.is_zipfile(r"d:\msdDataSource.msd")):
+with zipfile.ZipFile(path,'r') as zzInput:
+    for filename in (fileName for fileName in zzInput.namelist() if not fileName in EXCLUDED_FILE_NAMES):
+        print filename
+        dom=parse(zzInput.open(filename,'U'))
 
-    zz = zipfile.ZipFile(r"d:\msdDataSource.msd")
-    for fileName in (fileName for fileName in zz.namelist() if not fileName in EXCLUDED_FILE_NAMES):
-        print fileName
-
-    if os.path.splitext(fileName)[1]==".xml":
-        dom=parse(zz.open(fileName))
-        print dom
-    pWorkspaceConnectionString=dom.getElementsByTagName('WorkspaceConnectionString')[0].childNodes[0].nodeValue
-    pWorkspaceFactory=dom.getElementsByTagName('WorkspaceFactory')[0].childNodes[0].nodeValue
-    pDataset=dom.getElementsByTagName('Dataset')[0].childNodes[0].nodeValue
-    print pWorkspaceConnectionString,pWorkspaceFactory,pDataset
+        pWorkspaceConnectionString=dom.getElementsByTagName('WorkspaceConnectionString')[0].childNodes[0].nodeValue
+        print pWorkspaceConnectionString
+        dom.getElementsByTagName('WorkspaceConnectionString')[0].childNodes[0].nodeValue='dd'
+        zzInput.write(dom)
 
 
-else:
+
+#         print dom
+#     pWorkspaceConnectionString=dom.getElementsByTagName('WorkspaceConnectionString')[0].childNodes[0].nodeValue
+#     # pWorkspaceFactory=dom.getElementsByTagName('WorkspaceFactory')[0].childNodes[0].nodeValue
+#     # pDataset=dom.getElementsByTagName('Dataset')[0].childNodes[0].nodeValue
+#     print pWorkspaceConnectionString
+#
+#     # modify the mxd
+#     dom.getElementsByTagName('WorkspaceConnectionString')[0].childNodes[0].nodeValue=''
+#
+#
+#
+# else:
 
 
     # for fileName in (fileName for fileName in zz.namelist()):
     #     dom = parse(zz.open(fileName))
-       print "dom"
+
 
 
 
