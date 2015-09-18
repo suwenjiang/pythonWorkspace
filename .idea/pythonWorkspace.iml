@@ -5,5 +5,6 @@
     <orderEntry type="jdk" jdkName="Python 2.7.8 (C:\Python27\ArcGIS10.3\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="ArcREST" />
+    <orderEntry type="module" module-name="AGS_Server_admin_toolbox" />
   </component>
 </module>

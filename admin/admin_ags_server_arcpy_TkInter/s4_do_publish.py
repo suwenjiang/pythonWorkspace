@@ -2,13 +2,8 @@
 __author__ = 'jmb'
 
 from Tkinter import *
-
-import os
-from tkFileDialog import *
 from tkMessageBox import *
-from Publishservice import *
 
-import sys
 # reload(sys)
 # sys.setdefaultencoding('utf8')
 class clsDoPublish:

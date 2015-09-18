@@ -1,12 +1,8 @@
 #-*-coding:cp936  -*-
 
 __author__ = 'jiangmb'
-import sys
-import getpass
-import os
-from GenerateAGSconnection import *
-from Publishservice import  *
 import time
+
 
 def GetMxFileList(filePath):
         #判断文件夹是否存在

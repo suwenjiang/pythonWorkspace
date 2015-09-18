@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/.idea/AGS_Server_admin_toolbox.iml" filepath="$PROJECT_DIR$/../AGS_Server_admin_toolbox/.idea/AGS_Server_admin_toolbox.iml" />
       <module fileurl="file://D:/opensource/ArcREST/.idea/ArcREST.iml" filepath="D:/opensource/ArcREST/.idea/ArcREST.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/pythonWorkspace.iml" filepath="$PROJECT_DIR$/.idea/pythonWorkspace.iml" />
     </modules>

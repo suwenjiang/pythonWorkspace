@@ -9,22 +9,7 @@ import os
 import sys
 
 
-#check path
-def getLogfile(log_path):
 
-    try:
-        fileslList=[]
-        for root,dirname,files in os.walk(log_path):
-            #print root,dir,files
-            for file in files:
-               # print file
-                if os.path.splitext(file)[1]=='.log':
-                    filePath=os.path.join(root,file)
-                    if os.path.getsize(filePath)!=0:
-                     fileslList.append(filePath )
-        return fileslList
-    except IOError,msg:
-        print msg
 
 def createDB(sqllite_file):
 
@@ -105,69 +90,3 @@ def splitCode(line):
     else:
         print line
 
-def queryAndFilter(sqllite_file,whereClause,result_Path):
-    conn=sqlite3.connect(sqllite_file)
-    file=open(result_Path+"\\result.txt",'w')
-    for row in conn.execute("select id,msgtime,msgtype,msg from log WHERE msgtype=? order by msgtime DESC;",(whereClause,)):
-        file.write("Id="+str(row[0])+";time="+row[1]+";msgtype="+row[2]+";msg="+row[3])
-        file.write("\n")
-    file.close()
-
-
-
-
-
-
-# dbpath=''
-# whereclause=''
-# typeclause={'w':'WARNING','i':'INFO','f':'FINE','v':'VERBOSE','s':'SERVERE','d':'DEBUG'}
-# parser = argparse.ArgumentParser()
-# parser.add_argument("p",help="input directory or path of log file ",action="store")
-# parser.add_argument("-c",'--complete',metavar='',help="completely output format")
-#
-# parser.add_argument("-l","--log",help="use msgType[warning,info,fine,verbose,severe,debug] to filter the log",\
-#                     choices=["w","i","f","v","s","d"],action="store")
-# parser.add_argument("-m","--machine",metavar='',help="machine name",action="store")
-# parser.add_argument("-t","--time",metavar='',help="time to filter log",action="store")
-# args=parser.parse_args()
-#
-# files=[]
-# result_path=''
-# if  os.path.isfile(args.p):
-#     files.append(args.p)
-#     dbpath=os.path.split(args.p)[0]+"\\log.sqlite"
-#     result_path=os.path.split(args.p)[0]
-#
-# elif os.path.isdir(args.p):
-#     files=getLogfile(args.p)
-#     if len(files)==0:
-#         print "The Current Dirtory don't container any log files"
-#         sys.exit()
-#     else:
-#         dbpath=args.p+"\\log.sqlite"
-#         result_path=args.p
-# else:
-#     print "please input a valid directory or .log file"
-#     sys.exit()
-#
-# if args.log:
-#     if not args.log in ['w','i','f','v','s','d']:
-#         print "please choose a value from ['w','i','f','v','s','d']"
-#         sys .exit()
-#     else:
-#         whereclause=typeclause[args.log]
-# # if args.machine:
-# #     whereclause=args.log
-
-
-
-# # createDB
-# createDB(dbpath)
-# if len(files)!=0:
-#     readAllMsg(dbpath,files)
-# queryAndFilter(dbpath,whereclause,result_path)
-#
-# #delteDB
-# os.remove(dbpath)
-files=getLogfile(r"C:\Users\jiangmb\Desktop\server")
-readAllMsg('',files)
