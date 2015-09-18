@@ -256,7 +256,7 @@ class publishServices:
 
 if __name__=='__main__':
 
-    logDict = {'server': '192.168.220.64',
+    logDict = {'server': '192.168.220.177',
                'userName': "arcgis",
                'passWord': "Super123",
                'port':'6080'}
@@ -271,7 +271,7 @@ if __name__=='__main__':
     #get
     file=r'd:\workspace\New folder\9'
     fileList=clsPublishservice.GetMxFileList(file)
-    clusterName='clusterA'
+    clusterName='default'
     servic_dir=''
 
     clsPublishservice.publishServices(fileList,path,clusterName,copy_data_to_server=False,folder=servic_dir)
