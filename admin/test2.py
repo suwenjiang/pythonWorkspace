@@ -32,4 +32,4 @@ def output(filename, sheet, list1, list2, x, y, z):
 
     book.save(filename)
 
-output('')
+output(r'd:\test.xlsx','jmb',['a','b','c'],[1,2,3],'j','m','b')

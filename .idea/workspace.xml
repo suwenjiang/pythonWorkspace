@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="939f8d04-d72d-494d-a3d7-995cccfc0cc2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AGS_Server_admin_toolbox/.idea/AGS_Server_admin_toolbox.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AGS_Server_admin_toolbox/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AGS_Server_admin_toolbox/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AGS_Server_admin_toolbox/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AGS_Server_admin_toolbox/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="D:\Personalwork\pythonWorkspace\admin\ArcMapTianditu.esriAddIn" afterPath="" />
-      <change type="DELETED" beforePath="D:\Personalwork\pythonWorkspace\admin\D" afterPath="" />
-      <change type="DELETED" beforePath="D:\Personalwork\pythonWorkspace\admin\admin_arcgis_server_with_arcpy_in_console\BathPublishMapServices\Publishservice.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\Personalwork\pythonWorkspace\admin\archive.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Personalwork\pythonWorkspace\admin\tools\6minute.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\Personalwork\pythonWorkspace\admin\tools\log_classification.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\Personalwork\pythonWorkspace\admin\tools\waterMark.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console/BathPublishMapServices/BatchPublishMapService.py" afterPath="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console/BathPublishMapServices/BatchPublishMapService.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pythonWorkspace.iml" afterPath="$PROJECT_DIR$/.idea/pythonWorkspace.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin_ags_server_arcpy_TkInter/s4_do_publish.py" afterPath="$PROJECT_DIR$/admin/admin_ags_server_arcpy_TkInter/s4_do_publish.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin_ags_server_arcpy_TkInter/setup.py" afterPath="$PROJECT_DIR$/admin/admin_ags_server_arcpy_TkInter/setup.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonTest/test5.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sample/checkservices_esri.py" afterPath="$PROJECT_DIR$/admin/sample/checkservices_esri.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pythonTest/test.py" afterPath="$PROJECT_DIR$/pythonTest/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/test2.py" afterPath="$PROJECT_DIR$/admin/test2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/test4.py" afterPath="$PROJECT_DIR$/admin/test4.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Personalwork\pythonWorkspace\admin\log_classification.py" afterPath="$PROJECT_DIR$/admin/sqlit.py" />
-      <change type="MOVED" beforePath="D:\Personalwork\pythonWorkspace\admin\test.py" afterPath="$PROJECT_DIR$/admin/setup_web_server.py" />
-      <change type="MOVED" beforePath="D:\Personalwork\pythonWorkspace\admin\test3.py" afterPath="$PROJECT_DIR$/admin/modify_msd.py" />
-      <change type="MOVED" beforePath="D:\Personalwork\pythonWorkspace\admin\tools\__init__.py" afterPath="$PROJECT_DIR$/admin/sample/__init__.py" />
-      <change type="MOVED" beforePath="D:\Personalwork\pythonWorkspace\pythonTest\checkservices_esri.py" afterPath="$PROJECT_DIR$/admin/sample/checkservices_esri.py" />
     </list>
     <ignored path="pythonWorkspace.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +25,8 @@
     <SUITE FILE_PATH="coverage/pythonWorkspace$upate_service_config.coverage" NAME="upate_service_config Coverage Results" MODIFIED="1441003451468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin/sample" />
     <SUITE FILE_PATH="coverage/pythonWorkspace$ddd.coverage" NAME="ddd Coverage Results" MODIFIED="1441851578725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonWorkspace$RepaireMSD.coverage" NAME="RepaireMSD Coverage Results" MODIFIED="1442308620912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console" />
-    <SUITE FILE_PATH="coverage/pythonWorkspace$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1441964513445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonTest" />
-    <SUITE FILE_PATH="coverage/pythonWorkspace$checkservices_esri.coverage" NAME="checkservices_esri Coverage Results" MODIFIED="1442198934122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonTest/userTest" />
+    <SUITE FILE_PATH="coverage/pythonWorkspace$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1442569338217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonTest" />
+    <SUITE FILE_PATH="coverage/pythonWorkspace$checkservices_esri.coverage" NAME="checkservices_esri Coverage Results" MODIFIED="1442806202974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin/sample" />
     <SUITE FILE_PATH="coverage/pythonWorkspace$GenerateAGSconnection.coverage" NAME="GenerateAGSconnection Coverage Results" MODIFIED="1442199824158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console/BathPublishMapServices" />
     <SUITE FILE_PATH="coverage/pythonWorkspace$test4.coverage" NAME="test4 Coverage Results" MODIFIED="1442559434290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin" />
     <SUITE FILE_PATH="coverage/pythonWorkspace$PublishMutilServices.coverage" NAME="PublishMutilServices Coverage Results" MODIFIED="1442196270122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console" />
@@ -63,9 +42,10 @@
     <SUITE FILE_PATH="coverage/pythonWorkspace$change_services_to_cluster.coverage" NAME="change_services_to_cluster Coverage Results" MODIFIED="1440820726189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin/admin_AGS_server_with_admin_api" />
     <SUITE FILE_PATH="coverage/pythonWorkspace$log_classification.coverage" NAME="log_classification Coverage Results" MODIFIED="1441964567194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin/tools" />
     <SUITE FILE_PATH="coverage/pythonWorkspace$checkservices_esri__1_.coverage" NAME="checkservices_esri (1) Coverage Results" MODIFIED="1442287898778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonTest" />
-    <SUITE FILE_PATH="coverage/pythonWorkspace$waterMark.coverage" NAME="waterMark Coverage Results" MODIFIED="1440731554267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonTest" />
+    <SUITE FILE_PATH="coverage/pythonWorkspace$waterMark.coverage" NAME="waterMark Coverage Results" MODIFIED="1442565912941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools" />
     <SUITE FILE_PATH="coverage/pythonWorkspace$convertToshp.coverage" NAME="convertToshp Coverage Results" MODIFIED="1441010543365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonTest/userTest" />
-    <SUITE FILE_PATH="coverage/pythonWorkspace$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1442554873482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin" />
+    <SUITE FILE_PATH="coverage/pythonWorkspace$test5.coverage" NAME="test5 Coverage Results" MODIFIED="1442568415615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonTest" />
+    <SUITE FILE_PATH="coverage/pythonWorkspace$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1442893385861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/admin" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -76,76 +56,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="log_classification.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/log_classification.py">
+      <file leaf-file-name="checkservices_esri.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/sample/checkservices_esri.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+            <state vertical-scroll-proportion="-0.5081556">
+              <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonTest/test.py">
+      <file leaf-file-name="modify_msd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/modify_msd.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Publishservice.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/Publishservice.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+              <caret line="35" column="14" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="14" />
               <folding>
-                <element signature="e#14#23#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="6minute.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/6minute.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52403843">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BatchPublishMapService.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console/BathPublishMapServices/BatchPublishMapService.py">
+      <file leaf-file-name="test2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/test2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="35" selection-start-line="29" selection-start-column="0" selection-end-line="31" selection-end-column="43" />
+              <caret line="0" column="11" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="11" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setup_web_server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/setup_web_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/test4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding>
-                <element signature="e#23#32#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -160,7 +98,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../AGS_Server_admin_toolbox" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -176,7 +114,6 @@
         <option value="$PROJECT_DIR$/pythonTest/userTest/MachineEdit.py" />
         <option value="$PROJECT_DIR$/admin/tools/6minute.py" />
         <option value="$PROJECT_DIR$/ddd.py" />
-        <option value="$PROJECT_DIR$/pythonTest/test.py" />
         <option value="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console/PublishMutilServices.py" />
         <option value="$PROJECT_DIR$/pythonTest/userTest/checkservices_esri.py" />
         <option value="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console/BathPublishMapServices/GenerateAGSconnection.py" />
@@ -191,11 +128,17 @@
         <option value="$PROJECT_DIR$/admin/sample/upate_service_config.py" />
         <option value="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console/BathPublishMapServices/eee.py" />
         <option value="$PROJECT_DIR$/admin/tools/log_classification.py" />
-        <option value="$PROJECT_DIR$/admin/test2.py" />
         <option value="$PROJECT_DIR$/admin/log_classification.py" />
         <option value="$PROJECT_DIR$/admin/test4.py" />
         <option value="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console/BathPublishMapServices/Publishservice.py" />
         <option value="$PROJECT_DIR$/admin/tools/Publishservice.py" />
+        <option value="$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/Publishservice.py" />
+        <option value="$PROJECT_DIR$/pythonTest/test5.py" />
+        <option value="$PROJECT_DIR$/pythonTest/test.py" />
+        <option value="$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/waterMark.py" />
+        <option value="$PROJECT_DIR$/../AGS_Server_admin_toolbox/README.md" />
+        <option value="$PROJECT_DIR$/admin/sample/checkservices_esri.py" />
+        <option value="$PROJECT_DIR$/admin/test2.py" />
       </list>
     </option>
   </component>
@@ -236,7 +179,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -245,46 +187,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pythonWorkspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArcREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pythonWorkspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArcREST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pythonWorkspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AGS_Server_admin_toolbox" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,7 +214,7 @@
       <recent name="D:\Personalwork\pythonWorkspace\admin\sample" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Publishservice">
+  <component name="RunManager" selected="Python.test2">
     <configuration default="false" name="Publishservice" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -328,7 +233,25 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="checkservices_esri (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="waterMark" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AGS_Server_admin_toolbox" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/waterMark.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -341,43 +264,43 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonWorkspace" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Personalwork\pythonWorkspace\admin\sample\checkservices_esri.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonTest/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="RepaireMSD" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="test5" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonTest" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonWorkspace" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console/RepaireMSD.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonTest/test5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="eee" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="checkservices_esri" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console/BathPublishMapServices" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/admin/sample" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pythonWorkspace" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/admin/admin_arcgis_server_with_arcpy_in_console/BathPublishMapServices/eee.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/admin/sample/checkservices_esri.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -714,7 +637,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="12">
+    <list size="13">
       <item index="0" class="java.lang.String" itemvalue="Python.test4" />
       <item index="1" class="java.lang.String" itemvalue="Python.test3" />
       <item index="2" class="java.lang.String" itemvalue="Python.Start_or_Stop_service_in_Batch" />
@@ -724,16 +647,18 @@
       <item index="6" class="java.lang.String" itemvalue="Python.ddd" />
       <item index="7" class="java.lang.String" itemvalue="Python.test2" />
       <item index="8" class="java.lang.String" itemvalue="Python.Publishservice" />
-      <item index="9" class="java.lang.String" itemvalue="Python.checkservices_esri (1)" />
-      <item index="10" class="java.lang.String" itemvalue="Python.RepaireMSD" />
-      <item index="11" class="java.lang.String" itemvalue="Python.eee" />
+      <item index="9" class="java.lang.String" itemvalue="Python.waterMark" />
+      <item index="10" class="java.lang.String" itemvalue="Python.test (1)" />
+      <item index="11" class="java.lang.String" itemvalue="Python.test5" />
+      <item index="12" class="java.lang.String" itemvalue="Python.checkservices_esri" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.Publishservice" />
-        <item index="1" class="java.lang.String" itemvalue="Python.eee" />
-        <item index="2" class="java.lang.String" itemvalue="Python.RepaireMSD" />
-        <item index="3" class="java.lang.String" itemvalue="Python.checkservices_esri (1)" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.checkservices_esri" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test5" />
+        <item index="3" class="java.lang.String" itemvalue="Python.waterMark" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Publishservice" />
       </list>
     </recent_temporary>
   </component>
@@ -796,32 +721,50 @@
       <option name="project" value="LOCAL" />
       <updated>1442564247996</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="the first commit">
+      <created>1442564399169</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1442564399169</updated>
+    </task>
+    <task id="LOCAL-00010" summary="0918">
+      <created>1442569808541</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1442569808541</updated>
+    </task>
+    <task id="LOCAL-00011" summary="0918">
+      <created>1442569854130</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1442569854130</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22552083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.478355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11796537" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2900433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20677084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.478355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4556277" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.102813855" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35064936" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -843,7 +786,8 @@
     <MESSAGE value="0911" />
     <MESSAGE value="update0918: the log_classification" />
     <MESSAGE value="the first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="the first commit" />
+    <MESSAGE value="0918" />
+    <option name="LAST_COMMIT_MESSAGE" value="0918" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -871,25 +815,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="82" />
+      <option name="time" value="85" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python27/ArcGIS10.3/Lib/urllib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1063" column="0" selection-start-line="1063" selection-start-column="0" selection-end-line="1063" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin_ags_server_arcpy_TkInter/s3_checkfile_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1098654">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/admin_ags_server_arcpy_TkInter/ReportServerInfo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -978,13 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/waterMark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51793724">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1106,9 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.35714287">
           <caret line="2" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="164" />
-          <folding>
-            <element signature="e#24#49#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1116,9 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1126,23 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/sample/checkservices_esri.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0689656">
-          <caret line="31" column="32" selection-start-line="11" selection-start-column="5" selection-end-line="31" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,7 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3550447">
           <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1158,7 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03448276">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,15 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0012771">
           <caret line="267" column="0" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,9 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1200,27 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.5625">
           <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-          <folding>
-            <marker date="1442557894474" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..LOG..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modify_msd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7307692">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/log_classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1228,15 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.043269232">
           <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonTest/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1244,24 +1100,99 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="35" selection-start-line="29" selection-start-column="0" selection-end-line="31" selection-end-column="43" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/log_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5156951">
+          <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/6minute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3026906">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/Publishservice.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+          <caret line="231" column="44" selection-start-line="226" selection-start-column="16" selection-end-line="231" selection-end-column="44" />
           <folding>
             <element signature="e#14#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/6minute.py">
+    <entry file="file://$PROJECT_DIR$/pythonTest/test5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52403843">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonTest/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="30" />
+          <folding>
+            <element signature="e#12#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/tools/waterMark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding>
+            <element signature="e#12#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AGS_Server_admin_toolbox/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4076655">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modify_msd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/sample/checkservices_esri.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5081556">
+          <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
