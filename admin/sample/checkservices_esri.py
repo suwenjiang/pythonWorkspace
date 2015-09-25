@@ -1,7 +1,7 @@
 import urllib, json, time, traceback
 
 #change to your server URL
-base_url = 'http://localhost:6080/arcgis/rest/'
+base_url = 'http://192.168.100.202:6080/arcgis/rest/'
 
 def openURL(url,params=None):
     try:
@@ -45,11 +45,11 @@ def launchDescriptionServices(rest_info, nb_of_services):
 
 # first launch, cache the services
 
-print("Cache 1st 400 services")
-launchDescriptionServices(rest_info,400)
+print("Cache 1st 260 services")
+launchDescriptionServices(rest_info,260)
 
 print("calculate the mean for 400 services")
-launchDescriptionServices(rest_info,400)
+launchDescriptionServices(rest_info,260)
 
 #
 # print("Cache all services")
